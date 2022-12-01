@@ -16,7 +16,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_say_the_number_when_count_off_given_multiple_of_3() {
+    void should_say_Fizz_when_count_off_given_multiple_of_3() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         //when
@@ -26,7 +26,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_say_the_number_when_count_off_given_multiple_of_5() {
+    void should_say_the_Buzz_when_count_off_given_multiple_of_5() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         //when
@@ -35,5 +35,14 @@ public class FizzBuzzTest {
         assertEquals("Buzz",actual);
     }
 
+    @Test
+    void should_say_the_Whizz_when_count_off_given_multiple_of_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String actual = fizzBuzz.countOff(14);
+        //then
+        assertEquals("Whizz",actual);
+    }
 
 }
