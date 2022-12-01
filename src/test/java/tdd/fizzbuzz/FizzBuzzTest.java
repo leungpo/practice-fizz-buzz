@@ -33,7 +33,6 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.countOff(10);
         //then
         assertEquals("Buzz",actual);
-
     }
 
 
