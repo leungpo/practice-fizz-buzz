@@ -22,7 +22,7 @@ public class FizzBuzzTest {
         //when
         String actual = fizzBuzz.countOff(6);
         //then
-        assertEquals("Fuzz",actual);
+        assertEquals("Fizz",actual);
     }
 
     @Test
