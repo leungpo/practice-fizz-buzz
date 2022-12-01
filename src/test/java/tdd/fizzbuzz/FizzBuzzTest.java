@@ -67,4 +67,14 @@ public class FizzBuzzTest {
 
     }
 
+    @Test
+    void should_say_BuzzWhizz_when_count_off_given_multiple_of_5_and_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String actual = fizzBuzz.countOff(35);
+        //then
+        assertEquals("BuzzWhizz",actual);
+    }
+
 }
